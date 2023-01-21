@@ -1,0 +1,45 @@
+.headerContainer{
+    display: flex;
+    /*width: 100%;*/
+    width: 85%;
+    position: fixed;
+    margin-top: -10px;
+    height: 60px;
+    border-radius: 5px;
+    justify-content: space-between;
+    background-color: #0B0C10;
+    border-bottom: 0.02em white solid;
+}
+
+.signOutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartLogoAndSignOutContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signOutButton{
+    width: 100px;
+    background-color: #49c5b6;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media only screen and (max-width:962px) {
+    .headerContainer{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:500px) {
+    .logo{
+        display: none;
+    }
+}

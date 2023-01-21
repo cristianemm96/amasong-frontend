@@ -1,0 +1,1 @@
+export const isEmpty = (elem) => !elem || elem.trim().length == 0;

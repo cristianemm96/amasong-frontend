@@ -1,0 +1,11 @@
+.productsContainer{
+    width: 95%;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 300px;
+    padding-bottom: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+}

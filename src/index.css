@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+
+.appContainer{
+  width: 85%; 
+  background-color: #222;
+  margin: auto;
+}
+
+@media only screen and (max-width:960px) {
+  .appContainer{
+    width: 100%;
+  }
+}

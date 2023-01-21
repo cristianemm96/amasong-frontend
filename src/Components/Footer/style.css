@@ -1,0 +1,15 @@
+.footerContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:black;
+    color: white;
+    height:40px; 
+    border-top:1px white solid;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}

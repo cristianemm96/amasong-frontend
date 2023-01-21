@@ -1,0 +1,40 @@
+.searchButton{
+    width: 21%;
+    height: 35px;
+    color: white;
+    background-color: #49c5b6;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+.searchInput{
+    width: 50%;
+    height: 35px;
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+}
+
+.searchContainer{
+    width: 55%;
+    height: 60px;
+    margin: 20px auto 15px auto;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+@media only screen and (max-width:990px) {
+    .searchContainer{
+        width: 100%;
+    }
+    .searchForm{
+        width: 100%;
+    }
+    .searchInput{
+        width: 55%;
+    }
+}

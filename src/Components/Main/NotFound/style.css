@@ -1,0 +1,34 @@
+.imgError{
+    width: 60%;
+    height: 400px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-bottom: 20px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:510px) {
+    .imgError{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.backButton{
+    width: 110px;
+    height: 35px;
+    border-style: none;
+    background-color: #49c5b6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
