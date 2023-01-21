@@ -13,13 +13,13 @@ export const Header = () => {
   let [currentEmail, setCurrentEmail] = useState(null)
   let [currentId, setCurrentId] = useState(null)
   useEffect(()=>{
-    if(currentUser.email != null){
-      setCurrentEmail(currentUser.email)
-      setCurrentId(currentUser.id)
+    if(currentUser.user.email != null){
+      setCurrentEmail(currentUser.user.email)
+      setCurrentId(currentUser.user.id)
     }
   },[currentUser])
   const dispatch = useDispatch()
-  const signOut = ()=>{dispatch(setOffUser({email:null, id:null}))}
+  const signOut = ()=>{dispatch(setOffUser({user:{email:null, id:null}}))}
   const navigate = useNavigate()
   const signOutUser = ()=>{
     signOut()
