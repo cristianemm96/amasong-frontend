@@ -14,8 +14,8 @@ export const Header = () => {
   let [currentId, setCurrentId] = useState(null)
   useEffect(()=>{
     if(currentUser.email != null){
-      setCurrentEmail(currentUser.user.email)
-      setCurrentId(currentUser.user.id)
+      setCurrentEmail(currentUser.email)
+      setCurrentId(currentUser.id)
     }
   })
   const dispatch = useDispatch()
