@@ -1,1 +1,1 @@
-export const server = "https://amasong-db.onrender.com/"
+export const server = "https://amasong-db.onrender.com"
