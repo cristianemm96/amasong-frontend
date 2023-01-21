@@ -13,7 +13,7 @@ export const Header = () => {
   let [currentEmail, setCurrentEmail] = useState(null)
   let [currentId, setCurrentId] = useState(null)
   useEffect(()=>{
-    if(currentUser){
+    if(currentUser.email != null){
       setCurrentEmail(currentUser.user.email)
       setCurrentId(currentUser.user.id)
     }
