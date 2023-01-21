@@ -12,10 +12,10 @@ import { ChangePassword } from "../Components/Session/UserForms/ChangePassword";
 
 export const RoutesComp = () => {
   const user = useSelector(state => state.user.user)
-  console.log(user)
+  console.log(user.email)
   let currentEmail = null
   let currentId = null
-  if(user.email){
+  if(user.email != null){
     currentEmail = user.email
     currentId = user.id
   }
