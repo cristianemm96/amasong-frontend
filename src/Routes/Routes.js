@@ -14,7 +14,7 @@ export const RoutesComp = () => {
   const user = useSelector(state => state.user.user)
   let currentEmail = null
   let currentId = null
-  if(user){
+  if(user.email){
     currentEmail = user.email
     currentId = user.id
   }
