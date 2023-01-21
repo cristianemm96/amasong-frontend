@@ -12,6 +12,7 @@ import { ChangePassword } from "../Components/Session/UserForms/ChangePassword";
 
 export const RoutesComp = () => {
   const user = useSelector(state => state.user.user)
+  console.log(user)
   let currentEmail = null
   let currentId = null
   if(user.email){
