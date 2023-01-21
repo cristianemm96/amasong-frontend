@@ -17,7 +17,7 @@ export const Header = () => {
       setCurrentEmail(currentUser.email)
       setCurrentId(currentUser.id)
     }
-  })
+  },[currentUser])
   const dispatch = useDispatch()
   const signOut = ()=>{dispatch(setOffUser({email:null, id:null}))}
   const navigate = useNavigate()
