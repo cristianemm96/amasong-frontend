@@ -16,6 +16,7 @@ export const CheckEmail = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const setEmailContent = (e) => {
+    setdStatus(true)
     setEmail(e.target.value);
   };
   const checkCurrentEmail = async (e) => {
@@ -60,7 +61,7 @@ export const CheckEmail = () => {
             />
 
             {dStatus ?<div id="loading"/>:<div></div>}
-            <SessionButton type={"submit"} value={"Enviar email"} onClick={()=>setdStatus(true)}/>
+            <SessionButton type={"submit"} value={"Enviar email"}/>
           </FormStyled>
         </FlexColumnContainer>
       </div>
