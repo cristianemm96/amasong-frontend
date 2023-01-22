@@ -4,7 +4,6 @@ import { NavbarContainerStyled } from "../../../StyledComponents/Containers/Navb
 
 export const Navbar = ({user}) => {
   const userS = user
-  console.log(user)
   return (
     <NavbarContainerStyled>
       <Link to="/">Home</Link>

@@ -9,7 +9,6 @@ import './style.css'
 
 export const Header = () => {
   const currentUser = useSelector(state=> state.user)
-  console.log(currentUser)
   let [currentEmail, setCurrentEmail] = useState(null)
   let [currentId, setCurrentId] = useState(null)
   useEffect(()=>{
