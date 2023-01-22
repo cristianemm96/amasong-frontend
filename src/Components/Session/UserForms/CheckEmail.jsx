@@ -60,7 +60,7 @@ export const CheckEmail = () => {
             />
 
             {dStatus ?<div id="loading"/>:<div></div>}
-            <SessionButton type={"submit"} value={"Enviar email"} onClick={()=>setdStatus(true)}/>
+            <SessionButton type={submit} value={"Enviar email"} onClick={()=>setdStatus(true)}/>
           </FormStyled>
         </FlexColumnContainer>
       </div>
