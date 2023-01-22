@@ -5,7 +5,6 @@ import { ProductCardContainer } from "./ProductCardContainer";
 
 export const Recomended = () => {
   const products = useSelector((state) => state.products.products);
-  console.log(products)
   const getSelleds = products.reduce((acc, el) => acc.concat(el.selled), []);
 
   const maxSelleds = getSelleds

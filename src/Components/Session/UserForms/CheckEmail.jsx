@@ -61,7 +61,7 @@ export const CheckEmail = () => {
             />
 
             {dStatus ??<div id="loading"/>}
-            <SessionButton type={"submit"} value={"Enviar email"} />
+            <SessionButton type={"submit"} value={"Enviar email"} onClick={()=>setdStatus(true)}/>
           </FormStyled>
         </FlexColumnContainer>
       </div>
