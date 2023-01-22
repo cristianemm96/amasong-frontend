@@ -39,7 +39,8 @@ export const CheckEmail = () => {
           swal({
               title:`${error.response.data.message}`,
               icon:"error"
-          })
+          }),
+          setdStatus(false)
       }
     }
   };
