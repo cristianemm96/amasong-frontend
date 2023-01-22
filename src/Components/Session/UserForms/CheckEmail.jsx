@@ -38,7 +38,10 @@ export const CheckEmail = () => {
               title:`${error.response.data.message}`,
               icon:"error"
           })
-          window.location.reload()
+          setTimeout(()=>{
+            window.location.reload()
+        }, 4000);
+          
       }
     }
   };
