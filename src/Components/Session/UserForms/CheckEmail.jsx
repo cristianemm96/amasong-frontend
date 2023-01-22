@@ -34,11 +34,11 @@ export const CheckEmail = () => {
             
           );
       } catch (error) {
-          setdStatus(false)
           swal({
               title:`${error.response.data.message}`,
               icon:"error"
           })
+          window.location.reload()
       }
     }
   };
