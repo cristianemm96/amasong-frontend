@@ -40,7 +40,7 @@ export const CheckEmail = () => {
           })
           setTimeout(()=>{
             window.location.reload()
-        }, 4000);
+        }, 3000);
           
       }
     }
