@@ -16,13 +16,12 @@ export const CheckEmail = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
   const setEmailContent = (e) => {
-    setdStatus(true)
     setEmail(e.target.value);
   };
   const checkCurrentEmail = async (e) => {
     e.preventDefault();
+    setdStatus(true)
     if(!isEmpty(email) && isEmail(email)){
-      setdStatus(true)
       try {
         await axios
           .post(`${server}/auth/check-email`, {
