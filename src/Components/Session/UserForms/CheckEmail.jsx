@@ -28,19 +28,17 @@ export const CheckEmail = () => {
             emailReq: email,
           })
           .then((res) => {
-            console.log(res)
-            setdStatus(false)
               window.confirm(res.data)
               navigate("/");
             }
             
           );
       } catch (error) {
+          setdStatus(false)
           swal({
               title:`${error.response.data.message}`,
               icon:"error"
-          }),
-          setdStatus(false)
+          })
       }
     }
   };
