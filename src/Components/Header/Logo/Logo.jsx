@@ -5,9 +5,13 @@ import '../style.css'
 
 export const Logo = () => {
   let navigate = useNavigate()
+  const handleClick = ()=>{
+    navigate('/')
+    window.location.reload()
+  }
   return (
     <LogoStyledContainer>
-      <h1 onClick={()=>navigate('/')} style={{cursor:'pointer'}}>Amasong</h1>
+      <h1 onClick={()=>handleClick()} style={{cursor:'pointer'}}>Amasong</h1>
     </LogoStyledContainer>
   )
 }
