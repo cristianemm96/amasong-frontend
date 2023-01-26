@@ -20,7 +20,7 @@ export const SignUp = () => {
     if (!isEmpty(email) && !isEmpty(password) && isEmail(email)) {
       await axios
         .post(`${server}/auth/signup`, { email: email, password: password })
-        .then((res) =>
+        .then(() =>
           swal({
             title: "Usuario registrado!",
             icon: "success",
@@ -30,7 +30,7 @@ export const SignUp = () => {
             }, 2000)
           )
         )
-        .catch((err) =>
+        .catch(() =>
           swal({
             title: "Email ya registrado",
             icon: "error",
