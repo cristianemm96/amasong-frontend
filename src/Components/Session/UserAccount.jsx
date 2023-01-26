@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { getDate } from "../../Utils/date";
 import { getProductsFromUser } from "../../Utils/getProductsFromUser";
 import { server } from "../../Utils/vars";
 import "./style.css";
@@ -30,19 +31,13 @@ export const UserAccount = () => {
       setPurchItems(res);
     });
   }, [sellsUser]);
-  let date = new Date();
-  let output =
-    String(date.getDate()).padStart(2, "0") +
-    "/" +
-    String(date.getMonth() + 1).padStart(2, "0") +
-    "/" +
-    date.getFullYear();
+  let date = getDate()
   return (
     <div className="shopsContainer">
       {purchasedItems.length > 0 ? (
         purchasedItems.map((c) => (
           <div key={Math.random()} className="shopContainer">
-            <div style={{ width: "90%" }}>Pedido Realizado el: {output}</div>
+            <div style={{ width: "90%" }}>Pedido Realizado el: {date}</div>
             <div>
               {
                 <div key={Math.random()} className="prodInShopContainer">
