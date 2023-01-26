@@ -37,7 +37,6 @@ export const UserAccount = () => {
     String(date.getMonth() + 1).padStart(2, "0") +
     "/" +
     date.getFullYear();
-  console.log(purchasedItems);
   return (
     <div className="shopsContainer">
       {purchasedItems.length > 0 ? (
